@@ -1,0 +1,163 @@
+# =========================
+
+# Python
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =========================
+
+# Virtual Environment
+
+# =========================
+
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+
+# Environment Variables
+
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+
+# Logs
+
+# =========================
+
+*.log
+logs/
+*.out
+
+# =========================
+
+# Coverage / Testing
+
+# =========================
+
+.coverage
+.coverage.*
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# =========================
+
+# Mypy / Ruff
+
+# =========================
+
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+
+# VS Code
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# JetBrains
+
+# =========================
+
+.idea/
+
+# =========================
+
+# Windows
+
+# =========================
+
+Thumbs.db
+Desktop.ini
+
+# =========================
+
+# macOS
+
+# =========================
+
+.DS_Store
+
+# =========================
+
+# Oracle Wallets (si usas)
+
+# =========================
+
+wallet/
+*.sso
+*.p12
+*.jks
+
+# =========================
+
+# JWT Keys
+
+# =========================
+
+private.pem
+public.pem
+keys/
+certs/
+
+# =========================
+
+# Temporary files
+
+# =========================
+
+tmp/
+temp/
+*.tmp
+
+# =========================
+
+# Generated reports
+
+# =========================
+
+reports/
+exports/
+
+# =========================
+
+# Local databases
+
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
