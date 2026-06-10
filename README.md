@@ -289,3 +289,10 @@ Proyecto interno de integración de nómina.
 ✔ JWT RS256 implementado
 ✔ Control de scopes activo
 ✔ Oracle integrado
+
+
+## GENERA LLAVE PUBLIC Y PROVADA 
+
+openssl genrsa -out keys/private.pem 2048 
+
+openssl rsa -in keys/private.pem -pubout -out keys/public.pem 

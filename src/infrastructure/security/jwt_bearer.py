@@ -15,11 +15,9 @@ class JWTBearer(
     HTTPBearer
 ):
 
-    def __init__(
-            self,
-            required_scopes: list[str] | None = None
-    ):
-        super().__init__()
+    def __init__(self,required_scopes: list[str] | None = None):
+        
+        super().__init__(auto_error=False)
 
         self.required_scopes = (
             required_scopes or []
@@ -65,8 +63,6 @@ class JWTBearer(
             "scope",
             []
         )
-        print("Scopes del token:", token_scopes)
-        print("Scopes requeridos:", self.required_scopes)
         for scope in self.required_scopes:
 
             if scope not in token_scopes:

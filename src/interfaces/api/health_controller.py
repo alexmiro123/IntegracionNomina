@@ -77,23 +77,3 @@ async def verify_token_test():
     return payload
 
 
-
-router = APIRouter(
-    prefix="/employees",
-    tags=["Employees"]
-)
-
-
-@router.get("")
-async def get_employees(
-    payload=Depends(
-        JWTBearer(
-            ["employees:read"]
-        )
-    )
-):
-
-    return {
-        "message": "Consulta empleados",
-        "payload": payload
-    }
