@@ -10,17 +10,10 @@ from src.shared.utils.scope_utils import (parse_scopes)
 
 class GenerateTokenUseCase:
 
-    def __init__(
-        self,
-        repository
-    ):
+    def __init__(self,repository):
         self.repository = repository
 
-    def execute(
-        self,
-        provider_id: str,
-        provider_secret: str
-    ):
+    def execute(self,provider_id: str,provider_secret: str):
 
         provider = (
             self.repository

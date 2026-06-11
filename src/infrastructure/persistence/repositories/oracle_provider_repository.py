@@ -17,16 +17,10 @@ class OracleProviderRepository(
     ProviderRepository
 ):
 
-    def __init__(
-        self,
-        db: Session
-    ):
+    def __init__(self,db: Session):
         self.db = db
 
-    def get_by_provider_id(
-        self,
-        provider_id: str
-    ):
+    def get_by_provider_id(self,provider_id: str):
 
         result = (
             self.db.query(
@@ -46,7 +40,7 @@ class OracleProviderRepository(
             provider_id=result.PROVIDER_ID,
             provider_secret_hash=result.PROVIDER_SECRET_HASH,
             provider_name=result.PROVIDER_NAME,
-            status=result.STATUS == 1,
+            status=result.STATUS,
             provider_scopes=(
                 result.PROVIDER_SCOPES.split(",")
                 if result.PROVIDER_SCOPES

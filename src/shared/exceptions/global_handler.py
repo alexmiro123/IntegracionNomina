@@ -57,6 +57,6 @@ async def validation_exception_handler(
             "Success": False,
             "Message": "Error de validación",
             "Status": 422,
-            "Errors": exc.errors()
+            "Data": exc.errors()
         }
     )
